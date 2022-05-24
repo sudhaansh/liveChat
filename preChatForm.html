@@ -11,6 +11,11 @@
        var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
        document.getElementById('prechatForm').setAttribute('action',
        decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+	 var test=  document.getElementById('prechatForm').setAttribute('action',
+       decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+	   console.log('endpointMatcher '+endpointMatcher);
+	   console.log('test '+test);
+	   
      } if (window.addEventListener) {
          window.addEventListener('load', handlePageLoad, false);
      } else { 
